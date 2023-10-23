@@ -1,0 +1,15 @@
+1. D ::= A | E
+2. E ::= E INCREMENT | E MAIS_IGUAL E PONTO_VIRGULA | ESCREVER STRING PONTO_VIRGULA | ESCREVER E PONTO_VIRGULA | ESCREVER E VIRGULA E PONTO_VIRGULA | ESCREVER STRING VIRGULA E PONTO_VIRGULA | ESCREVER E VIRGULA STRING PONTO_VIRGULA | E MAIS E PONTO_VIRGULA | E MULT E | E MENOS E | MENOS E | LPAR E RPAR | NUMERO | ID | E DIVISAO E | COMENTARIO_UMA_LINHA | COMENTARIO_MULTIPLAS_LINHAS | PARA ID EM LBRACKET E VIRGULA E RBRACKET FAZER E FIMPARA
+3. A ::= ID IGUAL E PONTO_VIRGULA
+4. VAR ::= var_list PONTO_VIRGULA
+5. var_list ::= var_item | var_item VIRGULA var_list
+6. var_item ::= ID IGUAL constant
+7. constant ::= NUMERO | STRING
+
+1. uma declaração pode ser uma atribuição ('A') ou uma expressão ('E').
+2. uma expressão pode ser uma operação de incremento, adição, multiplicação, subtração, negação, um número, uma variável, um comentário, um loop "para".
+3. uma atribuição é feita ao associar uma expressão a um identificador.
+4. declaração de várias variáveis de uma vez.
+5. a lista de variáveis pode ser um único item ou uma lista de itens separados por vírgulas.
+6. um item da lista de variáveis é um identificador igual a uma constante.
+7. uma constante pode ser um número ou uma string.

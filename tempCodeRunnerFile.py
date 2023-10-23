@@ -1,0 +1,1 @@
+VAR f=10; ESCREVER f;
